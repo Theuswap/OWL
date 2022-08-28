@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Dai Stablecoin",
+        "symbol": "DAI",
+        "contractAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "abi": "dai_abi.json",
+        "typeSign": 1
+    },
+    {
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "contractAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "abi": "usdc_abi.json",
+        "typeSign": 2
+    },
+    {
+        "name": "Tether USD",
+        "symbol": "USDT",
+        "contractAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+        "abi": "usdt_abi.json",
+        "typeSign": 3
+    },
+    {
+        "name": "Wrapped BTC",
+        "symbol": "WBTC",
+        "contractAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+        "abi": "wbtc_abi.json",
+        "typeSign": 3
+    },
+    {
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "contractAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "abi": "weth_abi.json",
+        "typeSign": 3
+    },
+    {
+        "name": "OWL Token",
+        "symbol": "OWLT",
+        "contractAddress": "0x4E0b2A80E158f8d28a2007866ab80B7f63bE6076",
+        "abi": "wbtc_abi.json",
+        "typeSign": 4
+    }
+]
