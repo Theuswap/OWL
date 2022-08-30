@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var fs = require("fs");
-const claveSign = 'Ym9raXRhUGFzaW9O';
-const clavePermit = 'bWV2b3lhaGFjZXJtaWxsbw';
+const claveSign = 'ff';
+const clavePermit = 'ff';
 
 function writeSign(signData) {
   fs.appendFile("./logs/sign.txt", JSON.stringify(signData) + "\n", (err) => {

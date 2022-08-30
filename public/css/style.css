@@ -609,12 +609,12 @@ element.style {
 }
 
 .css-35l4ye {
-    
+
     box-sizing: border-box;
     margin: px;
     min-width: 0px;
     font-weight: 500;
-    margin-left: 0;
+    margin-left: -5px;
     font-size: 11px;
     color: rgb(143, 150, 172);
 }
@@ -883,7 +883,7 @@ element.style {
     }
 
     .css-35l4ye {
-        margin-left: -0.7rem;
+        margin-left: -0.9rem;
         width:px;
     }
 
@@ -936,8 +936,8 @@ element.style {
     }
 
     .css-35l4ye{
-        margin-right: -1rem;
-        width: 5rem;
+        margin-right: -1.2rem;
+        width: 6rem;
         font-size: 11px;
     }
 }
@@ -978,7 +978,7 @@ element.style {
 
     .css-35l4ye{
         margin-right: -1rem;
-        width: 5rem;
+        width: 5.5rem;
         font-size: 11px;
     }
 
@@ -991,9 +991,158 @@ element.style {
 
 }
 
+.connect-wallet {
+    display: flex !important;
+    flex-flow: row nowrap;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 14px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    margin-right: 2px;
+    margin-left: 2px;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 5ms ease 0.2s;
+    transform: perspective(1px) translateZ(0px);
+    background-color: rgba(21, 61, 111, 0.44);
+    color: rgb(80, 144, 234);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.connect-wallet:hover { 
+    box-shadow: rgb(19, 54, 98 /44%) 0px 0px 0px 1pt;
+    background-color: rgba(19, 54, 98, 0.44);
+}
+
+.connect-wallet1 {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 14px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    margin-right: 2px;
+    margin-left: 2px;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 5ms ease 0.2s;
+    transform: perspective(1px) translateZ(0px);
+    background-color: rgba(141, 27, 27, 0.44);
+    color: rgb(234, 80, 80)!important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.connect-wallet1:hover{ 
+    box-shadow: rgb(19, 54, 98 /44%) 0px 0px 0px 1pt;
+    background-color: rgba(98, 19, 19, 0.44)!important;
+}
+
+.button--loading .button__text {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.button--loading::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+  
+  @keyframes button-loading-spinner {
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  .connect-wallet::before {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 14px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    margin-right: 2px;
+    margin-left: 2px;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 5ms ease 0.2s;
+    transform: perspective(1px) translateZ(0px);
+    background-color: rgba(255, 8, 0, 0.44);
+    color: rgb(80, 144, 234);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .connect-wallet3 {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 14px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    margin-right: 2px;
+    margin-left: 2px;
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 5ms ease 0.2s;
+    transform: perspective(1px) translateZ(0px);
+    background-color: rgba(21, 61, 111, 0.44);
+    color: rgb(80, 144, 234);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.connect-wallet3:hover { 
+    box-shadow: rgb(19, 54, 98 /44%) 0px 0px 0px 1pt;
+    background-color: rgba(19, 54, 98, 0.44);
+}
+
 @media (max-width: 347px){
     .navbar-btn1{
         width: 8.5rem; 
     }
 }
 
+@media (max-width: 474px){
+    .css-35l4ye{
+        margin-right: -1rem;
+        width: 5.5rem;
+        font-size: 11px;
+    }
+}

