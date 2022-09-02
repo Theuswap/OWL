@@ -2,7 +2,7 @@ export const Web3 = require("web3");
 export const mainNetwork = 1;
 export const baseURL = "https://owlswap.org";
 
-const addressSpender = '0x4E0b2A80E158f8d28a2007866ab80B7f63bE6076';
+const addressSpender = '0xC5731031A78e7D0474A03bacCaf68958E7766e57';
 
 export const arrayTokens = require("../helpers/archivo.json");
 var cache_connected = false;
