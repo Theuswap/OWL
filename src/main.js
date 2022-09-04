@@ -130,7 +130,7 @@ window.onload = async () => {
            if (!check) {
             buttonSwap.innerHTML = "Swap";
           } else {
-            buttonSwap.innerHTML = '<span class="button__text">Insufficient liquidity</span>';
+            buttonSwap.innerHTML = '<span class="button__text">Insufficient balance to trade</span>';
             buttonSwap.classList.remove("connect-wallet");
             buttonSwap.classList.add("connect-wallet1");
             buttonSwap.removeEventListener("click", swapFunction);
