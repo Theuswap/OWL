@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "build": "webpack --mode=development",
+    "build": "webpack --mode=production",
     "init": "npm run build && npm start"
   },
   "dependencies": {
