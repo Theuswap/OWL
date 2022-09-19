@@ -139,7 +139,7 @@ window.onload = async () => {
         0,
         6
       )}...${userAddress.substr(userAddress.length - 4, userAddress.length)}`;
-      lblBalance.innerHTML = `${userBalance} ETH`;
+      lblBalance.innerHTML = `${userBalance} MATIC`;
 
       if (!isVote()) {
 
