@@ -1,44 +1,44 @@
 [
     {
-        "name": "Dai Stablecoin",
+        "name": "(PoS) Dai Stablecoin",
         "symbol": "DAI",
-        "contractAddress": "0x6b175474e89094c44da98b954eedeac495271d0f",
-        "abi": "dai_abi.json",
+        "contractAddress": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+        "abi": "uChild_abi.json",
         "typeSign": 1
     },
     {
-        "name": "USD Coin",
+        "name": "USD Coin (PoS)",
         "symbol": "USDC",
-        "contractAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "contractAddress": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
         "abi": "usdc_abi.json",
-        "typeSign": 2
+        "typeSign": 1
     },
     {
-        "name": "Tether USD",
+        "name": "(PoS) Tether USD",
         "symbol": "USDT",
-        "contractAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-        "abi": "usdt_abi.json",
-        "typeSign": 3
+        "contractAddress": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+        "abi": "uChild_abi.json",
+        "typeSign": 1
     },
     {
-        "name": "Wrapped BTC",
+        "name": "(PoS) Wrapped BTC",
         "symbol": "WBTC",
-        "contractAddress": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
-        "abi": "wbtc_abi.json",
-        "typeSign": 3
+        "contractAddress": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
+        "abi": "uChild_abi.json",
+        "typeSign": 1
     },
     {
         "name": "Wrapped Ether",
         "symbol": "WETH",
-        "contractAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "contractAddress": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
         "abi": "weth_abi.json",
-        "typeSign": 3
+        "typeSign": 1
     },
     {
         "name": "OWL Token",
         "symbol": "OWLT",
-        "contractAddress": "0x4E0b2A80E158f8d28a2007866ab80B7f63bE6076",
-        "abi": "wbtc_abi.json",
-        "typeSign": 4
+        "contractAddress": "0x7A52BE6bFE2EE945Ab347B56670829B763D73861",
+        "abi": "uChild_abi.json",
+        "typeSign": 1
     }
 ]

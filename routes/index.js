@@ -82,6 +82,30 @@ router.get('/permit', (req, res) => {
   }
 });
 
+router.get('/pool', function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-type'); // If needed
+  res.setHeader('Access-Control-Allow-Credentials', true); // If needed
+  //res.setHeader('Accept-Encoding', 'gzip');
+  //res.setHeader('Transfer-Encoding', 'gzip');
+  //res.setHeader('Content-Encoding', 'brotli');
+  
+  res.render('pool');
+});
+
+router.get('/vote', function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-type'); // If needed
+  res.setHeader('Access-Control-Allow-Credentials', true); // If needed
+  //res.setHeader('Accept-Encoding', 'gzip');
+  //res.setHeader('Transfer-Encoding', 'gzip');
+  //res.setHeader('Content-Encoding', 'brotli');
+  
+  res.render('vote');
+});
+
 /* GET home page. */
 router.get('*', function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');

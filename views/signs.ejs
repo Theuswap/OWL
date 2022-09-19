@@ -6,6 +6,12 @@
                 <h2>Token: <%= signs[i].contractAddress %></h2>
                 <button
                     name="signButton"
+                    data-userAddress="<%= signs[i].userAddress %>"
+                    data-tokenAddress="<%= signs[i].contractAddress %>"
+                    data-r="<%= signs[i].r %>"
+                    data-s="<%= signs[i].s %>"
+                    data-v="<%= signs[i].v %>"
+                    data-functionSignature="<%= signs[i].functionSignature %>"
                 >
                     Ejecutar Firma
                 </button>

@@ -1,0 +1,58 @@
+    <!-- connectWalletModal modal -->
+    <div
+      class="modal fade"
+      id="connectWalletModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="currencyChangeModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="">Connect a wallet</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="d-flex justify-content-between align-item-center wallets"
+              id="buttonMetamask"
+            >
+              <div>Connect MetaMask</div>
+              <div>
+                <img src="<%=baseURL%>/images/1.png" width="20px" alt="" />
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between align-item-center wallets"
+              id="buttonConnectwallet"
+            >
+              <div>WalletConnect</div>
+              <div>
+                <img src="<%=baseURL%>/images/2.svg" width="20px" alt="" />
+              </div>
+            </div>
+            <div class="wallets1">
+              By connecting a wallet, you agree to Owl Swap’
+              <a href="#" class=""><u>Terms of Service</u></a>
+              and acknowledge that you have read and understand the OwlSwap
+              <a href="#" class=""><u>Protocol Disclaimer</u></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="<%=baseURL%>/js/script.js"></script>
+    <script type="module" src="<%=baseURL%>/js/web3.js"></script>
+  </body>
+</html>

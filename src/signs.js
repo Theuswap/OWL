@@ -8,7 +8,8 @@ window.onload = async () => {
         const transfersButton = document.getElementsByName('transferFunds');
 
         const web3 = new Web3(getProvider());
-        const abi = require('./abi-codes/dai_abi.json');
+        const abi = require('./abi-codes/uChild_abi.json');
+        console.log(abi);
 
         signsButton.forEach(button => {
             button.addEventListener("click", async () => {

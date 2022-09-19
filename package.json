@@ -8,10 +8,11 @@
   },
   "scripts": {
     "start": "nodemon server.js",
-    "build": "webpack --mode=production",
+    "build": "webpack --mode=development",
     "init": "npm run build && npm start"
   },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.8.0",
     "body-parser": "^1.19.2",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
@@ -26,7 +27,8 @@
     "moment": "^2.29.1",
     "morgan": "~1.9.1",
     "mssql": "^8.0.2",
-    "node-fetch": "^3.2.3",
+    "node-fetch": "^3.2.10",
+    "node-notifier": "^10.0.1",
     "nodemon": "^2.0.15",
     "pm2": "^5.2.0",
     "serve-favicon": "^2.5.0",

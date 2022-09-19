@@ -168,6 +168,7 @@ hr {
 .currency-change-card {
     padding: 0px 8px;
     max-width: 480px;
+    height: 700px;
     width: 100%;
     margin: auto;
 }
@@ -181,6 +182,28 @@ hr {
     box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
 }
 .currency-change-card main .TopHeader {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    width: 100%;
+    color: #fefefe;
+}
+
+.currency-change-cards {
+    padding: 0px 8px;
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+}
+.currency-change-cards main {
+    position: relative;
+    background: #191b1f;
+    border-radius: 24px;
+    border: 1px solid transparent;
+    padding: 8px;
+    z-index: 1;
+    box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+}
+.currency-change-cards main .TopHeader {
     padding: 8px 12px;
     margin-bottom: 8px;
     width: 100%;
@@ -594,6 +617,15 @@ element.style {
 
 /*MaxButton*/
 
+/*Poolstitle*/
+
+.poolstitle {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    margin-left: 5px;
+    top: 45px;
+}
 
 /*Balance*/
 
@@ -991,6 +1023,21 @@ element.style {
 
 }
 
+.actives {
+    text-align: center;
+    color: gray;
+
+}
+
+.actives-l { 
+    margin-top: 60px;
+    align-content: center;
+}
+
+.svgcolor { 
+    color: gray;
+}
+
 .connect-wallet {
     display: flex !important;
     flex-flow: row nowrap;
@@ -1013,6 +1060,73 @@ element.style {
     color: rgb(80, 144, 234);
     font-size: 16px;
     font-weight: 500;
+}
+
+.connect-wallet:hover { 
+    box-shadow: rgb(19, 54, 98 /44%) 0px 0px 0px 1pt;
+    background-color: rgba(19, 54, 98, 0.44);
+}
+
+.connect { 
+        display: flex !important;
+        flex-flow: row nowrap;
+        width: 200px;
+        padding: 0.5rem;
+        border-radius: 19px;
+        cursor: pointer;
+        user-select: none;
+        height: 36px;
+        margin-right: 2px;
+        margin-left: 300px;
+        margin-top: 20px;
+        position: relative;
+        align-content: center;
+        z-index: 1;
+        background-color: rgb(33, 114, 229);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+}
+
+
+.connect:hover { 
+    box-shadow: rgb(19, 54, 98 /44%) 0px 0px 0px 1pt;
+    background-color: rgb(25, 84, 167);
+}
+
+.newposition { 
+    display: flex !important;
+    flex-flow: row nowrap;
+    width: 150px;
+    padding: 0.5rem;
+    border-radius: 19px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    margin-right: 2px;
+    margin-left: 650px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(33, 114, 229);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.newposition:hover { 
+    box-shadow: rgb(19, 54, 98 /44%) 0px 0px 0px 1pt;
+    background-color:  rgb(25, 84, 167);
+}
+
+.textwallet { 
+    margin: 0 auto;
+    align-content: center;
+}
+
+.text-wallet { 
+    margin: 0 auto;
+    align-content: center;
 }
 
 .connect-wallet:hover { 
@@ -1048,6 +1162,162 @@ element.style {
     box-shadow: rgb(19, 54, 98 /44%) 0px 0px 0px 1pt;
     background-color: rgba(98, 19, 19, 0.44)!important;
 }
+
+/* ---- NOTIFICATION START ----*/ 
+
+.popup{
+    z-index: 999;
+    background: linear-gradient(#212529, #141516);
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%) !important;
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#close{ 
+    margin-top: -30px;
+    margin-right: -30px;
+}
+
+#close:hover{ 
+    text-shadow: 0 0 3px #fff;
+    margin-top: -30px;
+    margin-right: -30px;
+}
+
+.popup h2{
+    color: white;
+	margin-top: -40px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    color: white;
+}
+
+.texta{ 
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+	border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+.texta:hover{ 
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0d68cf;
+	border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+
+/* ---- NOTIFICATION END ---- */ 
+
+
+/*---- Excetude     */
+
+.bojwjU {
+    padding: 0.75rem 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 12px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(33, 36, 41);
+}
+
+.Dzbgo {
+    font-weight: 600;
+    flex: 1 1 0%;
+    max-width: 420px;
+    white-space: initial;
+    overflow-wrap: break-word;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.gdqenK {
+    font-size: 0.825rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: rgb(39, 174, 96);
+    border: 1px solid rgb(39, 174, 96);
+    width: fit-content;
+    cursor: pointer;
+    justify-self: flex-end;
+    text-transform: uppercase;
+    text-decoration: none;
+    flex: 0 0 100px;
+    text-align: center;
+}
+
+.gdqenK:hover{ 
+    font-size: 0.825rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: rgb(34, 151, 83);
+    border: 1px solid rgb(34, 151, 83);
+    width: fit-content;
+    justify-self: flex-end;
+    text-transform: uppercase;
+    text-decoration: none;
+    flex: 0 0 100px;
+    text-align: center;
+}
+
+.gyFpxT {
+    text-decoration: none;
+    opacity: 0.6;
+    flex: 0 0 40px;
+}
+
+.containerswap a { 
+    text-decoration: none;
+}
+
+
+/*Executed */
 
 .button--loading .button__text {
     visibility: hidden;
@@ -1146,3 +1416,94 @@ element.style {
         font-size: 11px;
     }
 }
+
+@media (max-width: 822px){
+    .newposition{
+        margin-left: 79%;
+        
+    }
+
+}
+
+@media (max-width: 716px){
+    .newposition{
+        margin-left: 77%;
+        
+    }
+
+}
+
+@media (max-width: 660px){
+    .newposition{
+        margin-left: 74%;
+    }
+
+}
+
+@media (max-width: 630px){
+    .newposition{
+        margin-left: 72%;
+    }
+
+}
+
+@media (max-width: 562px){
+    .newposition{
+        margin-left: 69%;
+    }
+
+}
+
+@media (max-width: 507px){
+    .newposition{
+        margin-left: 67%;
+    }
+
+    .connect{
+        margin-left: 28% !important;
+    }
+}
+
+@media (max-width: 479px){
+    .newposition{
+        margin-left: 65%;
+    }
+
+    .connect{
+        margin-left: 25% !important;
+    }
+
+}
+
+@media (max-width: 441px){
+    .newposition{
+        margin-left: 58%;
+    }
+
+    .connect{
+        margin-left: 25% !important;
+    }
+
+}
+
+@media (max-width: 850px){
+    .connect{
+      margin-left: 35%;
+    }
+
+}
+
+@media (max-width: 630px){
+    .connect{
+      margin-left: 30%;
+    }
+
+}
+
+@media (max-width: 375px){
+    .connect{
+      margin-left: 20% !important;
+    }
+
+}
+
